@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import React from 'react'
 import CarouselSlide from '../carousel';
 import clsx from 'clsx';
 import { Rate } from "antd";
 import { CURRENY_SIGN } from '@/lib/constant';
+import Link from 'next/link';
 
 type Props = {
     images: string[]
@@ -14,14 +14,14 @@ type Props = {
     price: string
     type: string
     category: string
-    onClick?: () => void
+    href: string
     categoriesPage?: boolean
 }
 
 
-const Products = ({  onClick,images, name, ratings, owner, date, price, type, category, categoriesPage }: Props) => {
+const Products = ({ href ,images, name, ratings, owner, date, price, type, category, categoriesPage }: Props) => {
     return (
-        <div onClick={onClick} className={clsx(categoriesPage ? 'w-full md:w-[75%] mx-auto mb-10 relative cursor-pointer' : 'w-full md:w-[45%] lg:w-[23%] mx-auto mb-10 relative cursor-pointer')}>
+        <Link href={href} className={clsx(categoriesPage ? 'w-full md:w-[75%] mx-auto mb-10 relative cursor-pointer' : 'w-full md:w-[45%] lg:w-[23%] mx-auto mb-10 relative cursor-pointer')}>
          <CarouselSlide images={images} name={name} />
           <div className='flex justify-between text-sm mt-2'>
               <p className='font-semibold tracking-wide text-rose-500 capitalize'>{name}</p>
@@ -43,7 +43,7 @@ const Products = ({  onClick,images, name, ratings, owner, date, price, type, ca
                   {category}
               </h4>
               </div>
-      </div>
+      </Link>
   )
 }
 

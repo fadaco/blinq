@@ -2,7 +2,6 @@
 import { categories } from "@/lib/constant";
 import Products from "@/components/products";
 import StickyButton from "@/components/sticky-button";
-import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { fetchProducts } from "@/state/products/productsSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,7 +10,6 @@ import { LoadingOutlined } from '@ant-design/icons';
 import { Spin } from "antd";
 
 export default function Home() {
-  const router = useRouter()
   const dispatch = useDispatch<AppDispatch>()
   const {products, loading} = useSelector((state: RootState) => state.products)
 
@@ -43,7 +41,7 @@ export default function Home() {
               category={categories.filter(category => category.id === apartment.category)[0]?.name}
               type={apartment.type}
               date={apartment.date}
-              onClick={() => router.push(`/product/${apartment.name.replaceAll(' ', '-').toLowerCase()}/${apartment.id}`)}
+              href={`/product/${apartment.name.replaceAll(' ', '-').toLowerCase()}/${apartment.id}`}
             />
           )) : <div/>}
         </div>

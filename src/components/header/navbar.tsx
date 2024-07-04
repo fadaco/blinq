@@ -7,17 +7,18 @@ import UserIcon from '@/icons/user'
 import CartIcon from '@/icons/cart'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/state/store'
-import { useRouter } from 'next/navigation'
 import { Badge } from 'antd'
+import Link from 'next/link'
 
 type Props = {}
 
 const NavBar = (props: Props) => {
   const cart = useSelector((state: RootState) => state.cart.cart)
-  const router = useRouter()
   return (
     <nav className="sticky px-12 top-0 side-pad w-full border-b border-gray-200 z-20 text-center h-20 flex justify-between bg-white items-center">
-          <Image priority onClick={() => router.replace('/')} className='cursor-pointer' src="/logo.webp" alt="log" width={100} height={100} />
+          <Link href={'/'}>
+            <Image priority className='cursor-pointer' src="/logo.webp" alt="log" width={100} height={100} />
+          </Link>
           <div className="hidden  lg:inline-flex items-center font-medium space-x-3 border border-gray-200 rounded-full px-5 py-2.5 shadow-md divide-x divide-gray-300 min-w-[330px] curp">
             <p className="mid-item-bold">Anywhere</p>
             <p className="mid-item-bold pl-2">Any week</p>
@@ -30,12 +31,12 @@ const NavBar = (props: Props) => {
             <div className="font-medium text-sm cursor-pointer hover:bg-gray-100 transition-colors rounded-xl px-4 py-2.5 hidden lg:inline">
               Become a host
             </div>
-            <div onClick={() => router.push('/cart')} className="relative cursor-pointer hover:bg-gray-100 transition-colors rounded-full p-2 flexed lg:inline lg:text-xl">
+            <Link href={'/cart'} className="relative cursor-pointer hover:bg-gray-100 transition-colors rounded-full p-2 flexed lg:inline lg:text-xl">
           <Badge count={cart?.reduce((total, num) => total + num.quantity, 0)}>
           <CartIcon/>
           </Badge>
           
-            </div>
+            </Link>
             <div className="cursor-pointer rounded-[14px] flex text-xl  items-center pl-2 border border-gray-200 hover:shadow-md transition-all">
               <MenuIcon />
               <div className="px-1"/>
