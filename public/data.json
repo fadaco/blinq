@@ -1,0 +1,170 @@
+[
+    {
+      "id": 1,
+      "images": [
+        "/images/folder/img1.jpg",
+        "/images/folder/img11.jpg"
+      ],
+      "name": "Apartment In Lagos",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "22",
+      "ratings": 5,
+      "category": 4,
+      "type": "night"
+    },
+    {
+      "id": 2,
+      "images": [
+        "/images/folder/img2.webp",
+        "/images/folder/img12.webp"
+      ],
+      "name": "5 BR Detached",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "55",
+      "ratings": 2,
+      "category": 10,
+      "type": "night"
+    },
+    {
+      "id": 3,
+      "images": [
+        "/images/folder/img3.webp",
+        "/images/folder/img13.webp"
+      ],
+      "name": "5 BR Detached",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "35",
+      "ratings": 4,
+      "category": 8,
+      "type": "day"
+    },
+    {
+      "id": 4,
+      "images": [
+        "/images/folder/img4.webp",
+        "/images/folder/img14.jpg"
+      ],
+      "name": "Comfy Condo In Lekki",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "80",
+      "ratings": 4,
+      "category": 7,
+      "type": "night"
+    },
+    {
+      "id": 5,
+      "images": [
+        "/images/folder/img5.jpeg",
+        "/images/folder/img9.webp"
+      ],
+      "name": "Apartment In Accra",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "90",
+      "ratings": 1,
+      "category": 4,
+      "type": "night"
+    },
+    {
+      "id": 6,
+      "images": [
+        "/images/folder/img6.webp",
+        "/images/folder/img16.jpg"
+      ],
+      "name": "Apartment In Lagos",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "50",
+      "ratings": 2,
+      "category": 6,
+      "type": "night"
+    },
+    {
+      "id": 7,
+      "images": [
+        "/images/folder/img7.jpg",
+        "/images/folder/img17.jpg"
+      ],
+      "name": "3 BR Duplex",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "10",
+      "ratings": 2,
+      "category": 2,
+      "type": "night"
+    },
+    {
+      "id": 8,
+      "images": [
+        "/images/folder/img8.webp",
+        "/images/folder/img18.webp"
+      ],
+      "name": "3 BR Duplex",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "40",
+      "ratings": 4,
+      "category": 13,
+      "type": "day"
+    },
+    {
+      "id": 9,
+      "images": [
+        "/images/folder/img8.webp",
+        "/images/folder/img18.webp"
+      ],
+      "name": "3 BR Duplex",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "40",
+      "ratings": 3,
+      "category": 1,
+      "type": "day"
+    },
+    {
+      "id": 10,
+      "images": [
+        "/images/folder/img5.jpeg",
+        "/images/folder/img9.webp"
+      ],
+      "name": "3 BR Duplex",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "40",
+      "ratings": 4,
+      "category": 13,
+      "type": "day"
+    },
+    {
+      "id": 11,
+      "images": [
+        "/images/folder/img8.webp",
+        "/images/folder/img18.webp"
+      ],
+      "name": "3 BR Duplex",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "40",
+      "ratings": 1,
+      "category": 2,
+      "type": "day"
+    },
+    {
+      "id": 12,
+      "images": [
+        "/images/folder/img2.webp",
+        "/images/folder/img12.webp"
+      ],
+      "name": "3 BR Duplex",
+      "owner": "Ayo Abimbola",
+      "date": "Jan 5 - 10",
+      "price": "40",
+      "ratings": 2,
+      "category": 1,
+      "type": "day"
+    }
+  ]
