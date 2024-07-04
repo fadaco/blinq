@@ -39,7 +39,7 @@ const CartPage = (props: Props) => {
                                     </div>
                                 </div>
                                 <div className='text-lg mb-4 lg:mb-0'>{CURRENY_SIGN}{item.price}</div>
-                                <div className='mx-8 mb-4 lg:mb-0'>
+                                <div className='mx-5 mb-4 lg:mb-0'>
                                     <Button onClick={() => dispatch(adjustCart({ productId: item.productId, type: 'decrement' }))}>-</Button>
                                     <span className='mx-2'>{item.quantity}</span>
                                     <Button onClick={() => dispatch(adjustCart({ productId: item.productId, type: 'increment' }))}>+</Button>
