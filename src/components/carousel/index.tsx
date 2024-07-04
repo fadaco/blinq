@@ -24,7 +24,7 @@ const CarouselSlide = ({images, name}: Props) => {
         </div>
     }
     renderArrowPrev={(clickHandler, hasNext) => hasNext &&
-      <div className='absolute bg-white w-6 h-6 rounded-full left-0.5 bottom-2/4 z-10 flex items-center justify-center cursor-pointer'
+      <div className='absolute bg-white w-6 h-6 rounded-full left-0.5 bottom-[39%] z-10 flex items-center justify-center cursor-pointer'
         onClick={(e) => {
           e.stopPropagation()
           clickHandler()

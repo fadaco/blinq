@@ -25,6 +25,10 @@ const CartPage = (props: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    const handleCheckOut = () => {
+        // send the productId and quantity
+    }
+
     return (
         <>
             {cart.length ?
@@ -69,7 +73,7 @@ const CartPage = (props: Props) => {
                             <p>{CURRENY_SIGN}{cart?.reduce((total, num) => total + ((parseFloat(num.price) * num.quantity) - 4), 0) + '.00'}</p>
                         </div>
                         <div className='mt-14 flex justify-end'>
-                            <Button size='large' className='bg-rose-500 text-white'>Proceed to Checkout</Button>
+                            <Button onClick={handleCheckOut} size='large' className='bg-rose-500 text-white'>Proceed to Checkout</Button>
                         </div>
                     </div>
                 </div>
